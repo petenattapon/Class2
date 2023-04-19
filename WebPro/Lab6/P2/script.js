@@ -3,11 +3,11 @@
     let ul = document.querySelector('ul')
 
     function changeText() { 
-      if (button.textContent === ">> Show details") {
-        button.textContent = "  Hide details";
+      if (button.textContent === ">> Click for show details") {
+        button.textContent = "X Click for hidden details";
         ul.style.display = 'block'
       } else {
-        button.textContent = ">> Show details";
+        button.textContent = ">> Click for show details";
         ul.style.display = 'none'
       }
       button.removeEventListener('click', changeText);
