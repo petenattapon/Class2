@@ -16,6 +16,7 @@
        border: 2px solid black;
        padding: 10px;
        background-color: #e0e0e0;
+       display: block;
 }
 div {
        padding: 10px;
@@ -27,17 +28,17 @@ div {
   <body>
     <h1>Positioning Elements</h1>
     <div id="buttons">
-      <button type="button" name="left">ซ้าย</button>
-      <button type="button" name="right">ขวา</button>
-      <button type="button" name="up">ขึ้น</button>
-      <button type="button" name="down">ลง</button>
-      <button type="button" name="hide">ซ่อน</button>
-      <button type="button" name="show">แสดง</button>
+      <button type="button" id="left">ซ้าย</button>
+      <button type="button" id="right">ขวา</button>
+      <button type="button" id="up">ขึ้น</button>
+      <button type="button" id="down">ลง</button>
+      <button type="button" id="hide" onclick="toggleDisplay()">ซ่อน</button>
+      <button type="button" id="show">แสดง</button>
     </div>
     <hr>
     <div id="square">
       กล่องนี้จะขยับจะคำสั่ง
     </div>
-   <script></script>
+   <script src="./script/Test2.js"></script>
   </body>
 </html>

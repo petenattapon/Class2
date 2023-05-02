@@ -1,29 +1,27 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Test 1</title>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Style/Test1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
   <body>
     <h1>ข้อควมแบบสุ่ม</h1>
     <p>เปลี่ยนทุกครั้งที่ Reload</p>
-    <blockquote>All cats are black after midnight.</blockquote>
-    <p>Robert A. Heinlein</p>
-    <script></script>
+    <div id="random_quotes"></div>
     <h1>Image Gallery</h1>
 
-	<div>
-		<img src="img/image-0.jpg">
-	</div>
+    <div>
+      <img src="image-0.jpg" id="imgShow"/>
+    </div>
 
-	<div>
-		<img src="img/image-1.jpg">
-		<img src="img/image-2.jpg">
-		<img src="img/image-3.jpg">
-	</div>
-    <p>อัพเดทล่าสุด:</p>
-        <script></script>
+    <div>
+      <img src="image-1.jpg" onclick="changeImg('image-1.jpg')" class="pic-click"/>
+      <img src="image-2.jpg" onclick="changeImg('image-2.jpg')" class="pic-click"/>
+      <img src="image-3.jpg" onclick="changeImg('image-3.jpg')" class="pic-click"/>
+    </div>
+    <p id="result"></p>
+    <script src="./script/Test1.js"></script>
   </body>
 </html>
