@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 120%;
+    background: #f8f8f8;
+	font-family: 'Sono', sans-serif;
+}
+
+.header {
+    width: 20%;
+    text-align: center;
+    margin: 150px auto 0px;
+    color: white;
+    background: #f0efef;
+    border: 1px solid #bdbdbd;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+.header h2{
+    font-size: 1.8em;
+    color: transparent;
+    background-image: linear-gradient(to right, #002da8,rgb(42, 135, 241),rgb(42, 185, 241),#002da8);
+    -webkit-background-clip: text;
+    animation: animate 5s linear infinite;
+    -webkit-background-size: 500%;
+    background-size: 500%;
+}
+@keyframes animate{
+    0%{
+        background-position: 0% 100%;
+    }
+
+    50%{
+        background-position: 100% 0%;
+    }
+
+    100%{
+        background-position: 0% 100%;
+    }
+}
+
+
+form {
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #bdbdbd;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+
+.homeheader {
+    text-align: center;
+    font-size: 5rem;
+}
+
+.homecontent {
+    text-align: center;
+    padding-top: 3rem;
+    width: 100%;
+    background: #ccc;
+    height: 100vh;
+}
+
+.input-group {
+    margin: 10px 0px 10px 0px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #5f9ea0;
+    border: none;
+    border-radius: 5px;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+}
+.success {
+    color: #3c763d;
+    background: #dff9d8;
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+}
+button{
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+    background-image: linear-gradient(0deg, #002da8 0%, rgb(42, 135, 241) 100%);
+    border: none;
+    border-radius: 5px;
+}
+.mb-3 {
+    margin: 10px 0px 10px 0px;
+}
+
+.mb-3 label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+}
+
+.mb-3 input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
