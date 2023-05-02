@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-apache-environment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php-apache-environment
+  template:
+    metadata:
+      labels:
+        app: php-apache-environment
+    spec:
+      containers:
+        - name: php-apache
+          image: nutthanon/os-nattapon # Reg me
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-apache-environment-service
+spec:
+  selector:
+    app: php-apache-environment
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
