@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: php-apache
-        image: <your-registry>/php-apache:latest # Reg me
+        image: nattaponpongkaop/myproject-php-apache-environment-new # Reg me
         ports:
         - containerPort: 80
         volumeMounts:
