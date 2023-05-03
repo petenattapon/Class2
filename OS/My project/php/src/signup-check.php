@@ -39,7 +39,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 	}
 
 	else if($pass !== $re_pass){
-        header("Location: signup.php?error=The confirmation password  does not match&$user_data");
+        header("Location: signup.php?error=The confirmation password does not match&$user_data");
 	    exit();
 	}
 
@@ -48,8 +48,15 @@ if (isset($_POST['uname']) && isset($_POST['password'])
 		// hashing the password
         $pass = md5($pass);
 
-	    $sql = "SELECT * FROM users WHERE user_name='$uname' ";
+	    $sql = "SELECT * FROM users WHERE user_name='$uname'";
 		$result = mysqli_query($conn, $sql);
+
+		if ($result === false) {
+		    // There was an error in the SQL query
+		    $error_msg = mysqli_error($conn);
+		    header("Location: signup.php?error=$error_msg&$user_data");
+		    exit();
+		}
 
 		if (mysqli_num_rows($result) > 0) {
 			header("Location: signup.php?error=The username is taken try another&$user_data");

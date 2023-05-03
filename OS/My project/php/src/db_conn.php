@@ -1,12 +1,12 @@
+
 <?php
 
-$sname= "db";
-$unmae= "MYSQL_USER";
-$password = "MYSQL_PASSWORD";
+$host = 'db'; // replace with the IP address of your MySQL container
+$user = 'MYSQL_USER';
+$password = 'MYSQL_PASSWORD';
+$db_name = 'blog';
 
-$db_name = "blog";
-
-$conn = mysqli_connect($sname, $unmae, $password, $db_name);
+$conn = mysqli_connect($host, $user, $password, $db_name);
 
 if (!$conn) {
 	echo "Connection failed!";

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: php-apache
-          image: nutthanon/os-nattapon # Reg me
+          image: nattaponpongkaop/os-nattapon # Reg me
           ports:
             - containerPort: 80
 ---
