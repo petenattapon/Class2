@@ -6,7 +6,7 @@ error_reporting(1); //handles error to accept deprecated mysqli extension
 
 include_once('config.inc.php');
 
-$conn=mysqli_connect(DB_HOST,DB_USER,DB_PASS,DB_NAME);
+$conn=mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
 
 include_once('functions/blog.php');
 

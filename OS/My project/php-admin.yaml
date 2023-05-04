@@ -18,7 +18,7 @@ spec:
           image: phpmyadmin/phpmyadmin
           env:
             - name: PMA_HOST
-              value: db
+              value: db-service
           ports:
             - containerPort: 80
 ---

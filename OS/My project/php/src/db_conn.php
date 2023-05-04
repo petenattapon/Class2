@@ -1,13 +1,14 @@
 <?php
+$host = "db-service";
+$user = base64_decode("TVlTUUxfVVNFUg==");
+$password = base64_decode("TVlTUUxfUEFTU1dPUkQ=");
+$database = "blog";
+$port = 3306;
 
-$sname= "db";
-$unmae= "MYSQL_USER";
-$password = "MYSQL_PASSWORD";
-
-$db_name = "blog";
-
-$conn = mysqli_connect($sname, $unmae, $password, $db_name);
+$conn = mysqli_connect($host, $user, $password, $database, $port);
 
 if (!$conn) {
-	echo "Connection failed!";
-}?>
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+?>

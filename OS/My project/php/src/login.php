@@ -37,11 +37,11 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             	$_SESSION['id'] = $row['id'];
                 $_SESSION['userlevel'] = $row['userlevel'];
             	if ($_SESSION['userlevel'] == 'a') {
-                    header("Location: admin.php");
+					header("Location: admin.php");
                 }
-    
+				
                 if ($_SESSION['userlevel'] == 'm') {
-                    header("Location: blog.php");
+					header("Location: blog.php");
                 }
             }else{
 				header("Location: index.php?error=Incorect User name or password");
@@ -57,3 +57,5 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 	header("Location: index.php");
 	exit();
 }
+
+?>
