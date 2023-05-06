@@ -12,7 +12,7 @@ $posts = get_posts(null,$_GET['id']);
    <!--- Basic Page Needs
    ================================================== -->
    <meta charset="utf-8">
-	<title>K!</title>
+	<title>OS</title>
 	<meta name="description" content="">  
 	<meta name="author" content="">
 
@@ -53,7 +53,7 @@ return confirm("Are you sure you want to delete this record?");
 
    		<div class="header-content twelve columns">
 
-		      <h1 id="logo-text"><a href="index.php" title="">K!</a></h1>
+		      <h1 id="logo-text"><a href="admin.php" title="">4BOY</a></h1>
 				<p id="intro">You want to be at my level? CLIMB BITCH!</p>
 
 			</div>			

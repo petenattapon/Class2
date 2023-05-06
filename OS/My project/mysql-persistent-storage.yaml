@@ -7,7 +7,7 @@ type: Opaque
 data:
   user: TVlTUUxfVVNFUg== # base64-encoded "MYSQL_USER"
   root_password: TVlTUUxfUk9PVF9QQVNTV09SRA== # base64-encoded "MYSQL_ROOT_PASSWORD"
-  password: TVlTUUxfUEFTU1dPUkQ= # base64-encoded "MYSQL_PASSWORD"
+  password: TVlTUUxfUEFTU1dPUkQ= # base64-encodedc"
 
 ---
 apiVersion: v1
