@@ -1,0 +1,12 @@
+﻿version: '3'
+services:
+  tsp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - tsp-network
+    container_name: mynode
+
+networks:
+  tsp-network:
