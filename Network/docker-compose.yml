@@ -1,12 +1,40 @@
 ﻿version: '3'
 services:
-  tsp:
+  node1:
     build:
       context: .
       dockerfile: Dockerfile
     networks:
-      - tsp-network
-    container_name: mynode
+      tsp-network:
+        ipv4_address: 172.19.0.2
+
+  node2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      tsp-network:
+        ipv4_address: 172.19.0.3
+
+  node3:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      tsp-network:
+        ipv4_address: 172.19.0.4
+
+  node4:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      tsp-network:
+        ipv4_address: 172.19.0.5
 
 networks:
   tsp-network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.0.0/16
